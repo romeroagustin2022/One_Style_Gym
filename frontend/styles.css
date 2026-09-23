@@ -1,0 +1,361 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #050505;
+  color: #f8f9fa;
+}
+
+.brand-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  text-decoration: none;
+}
+
+.brand-one {
+  color: #e11111;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.brand-style {
+  color: #ffffff;
+  font-family: "Satisfy", cursive;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+#mainNav {
+  transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem 0;
+  background: rgba(5, 5, 5, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+#mainNav.navbar-scrolled {
+  background: rgba(5, 5, 5, 0.94);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  padding: 0.65rem 0;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.35)),
+    url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(220, 53, 69, 0.28), transparent 22%),
+    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.08), transparent 18%);
+  pointer-events: none;
+}
+
+.hero-card,
+.service-card,
+.plan-card,
+.contact-card,
+.schedule-box,
+.benefits-box,
+.schedule-table-wrapper,
+.map-box,
+.map-instructions {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.2);
+}
+
+.glass-card {
+  padding: 1.5rem;
+  backdrop-filter: blur(12px);
+}
+
+.stat-box {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stat-label {
+  margin-top: 0.35rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9rem;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.section-eyebrow {
+  color: #ff6b7c;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.05rem;
+}
+
+.section-narrow {
+  max-width: 680px;
+}
+
+.image-stack {
+  position: relative;
+}
+
+.main-image {
+  min-height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.floating-card {
+  position: absolute;
+  right: -1rem;
+  bottom: 1.25rem;
+  max-width: 260px;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  background: rgba(5, 5, 5, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.service-card {
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-card:hover,
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+}
+
+.service-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.schedule-box,
+.plan-card,
+.benefits-box,
+.contact-card,
+.map-instructions,
+.schedule-table-wrapper {
+  padding: 1.5rem;
+}
+
+.plan-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.plan-badge {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: #111111;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+}
+
+.plan-copy {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.plan-price {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.35rem;
+}
+
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.schedule-row:last-child {
+  border-bottom: 0;
+}
+
+.benefit-item {
+  padding: 0.95rem 1rem;
+  margin-bottom: 0.85rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.benefit-item:last-child {
+  margin-bottom: 0;
+}
+
+.schedule-table {
+  --bs-table-bg: transparent;
+  --bs-table-color: #f8f9fa;
+  --bs-table-border-color: rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.schedule-table th,
+.schedule-table td {
+  min-width: 110px;
+  padding: 1rem 0.75rem;
+  border-width: 2px;
+  vertical-align: middle;
+}
+
+.schedule-table thead th {
+  background: #ea5bb0;
+  color: #111111;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.schedule-table tbody td:first-child,
+.schedule-table thead th:first-child {
+  background: #ea5bb0;
+  color: #111111;
+  font-weight: 800;
+}
+
+.schedule-table tbody td {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.map-box {
+  width: 100%;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.map-box iframe {
+  border: 0;
+  width: 100%;
+  min-height: 420px;
+}
+
+.reveal,
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-link.active {
+  color: #fff !important;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.2rem;
+  height: 2px;
+  background: #dc3545;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 991.98px) {
+  .section-padding {
+    padding: 4.5rem 0;
+  }
+
+  .floating-card {
+    position: static;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero-card {
+    margin-top: 2rem;
+  }
+
+  .brand-one {
+    font-size: 1.65rem;
+  }
+
+  .brand-style {
+    font-size: 1.45rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal-up,
+  .service-card,
+  #mainNav {
+    transition: none;
+  }
+}

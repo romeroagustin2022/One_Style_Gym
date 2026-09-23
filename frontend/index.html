@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Style Gym</title>
+  <meta name="description" content="Sitio web sencillo para One Style Gym con Bootstrap, animaciones dinámicas, horarios, planes e Instagram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="#inicio" aria-label="One Style Gym">
+        <span class="brand-one">One</span>
+        <span class="brand-style">Style Gym</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#horarios">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ubicacion">Dónde queda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero-section d-flex align-items-center">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-7">
+          <span class="badge rounded-pill text-bg-danger px-3 py-2 mb-3">Santa Rosa de Calamuchita</span>
+          <h1 class="display-3 fw-bold mb-3 reveal-up">One Style Gym, movimiento real para cada etapa</h1>
+          <p class="lead text-white-50 mb-4 reveal-up">
+            Un espacio pensado para entrenar con energía, acompañamiento cercano y clases para distintos niveles.
+            Funcional, jumping, musculación, spinning y boxeo en un ambiente activo y motivador.
+          </p>
+          <div class="d-flex flex-wrap gap-3 reveal-up">
+            <a href="#planes" class="btn btn-danger btn-lg px-4">Ver planes</a>
+            <a href="#ubicacion" class="btn btn-outline-light btn-lg px-4">Cómo llegar</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-card glass-card reveal-up">
+            <p class="text-uppercase text-danger fw-semibold small mb-2">One Style Gym</p>
+            <h2 class="h3 fw-bold mb-3">Clases con cupos cuidados y variedad real</h2>
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="stat-box">
+                  <span class="stat-number" data-target="5">0</span>
+                  <span class="stat-label">Actividades</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <span class="stat-number" data-target="4">0</span>
+                  <span class="stat-label">Planes</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <span class="stat-number" data-target="6">0</span>
+                  <span class="stat-label">Días activos</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <span class="stat-number" data-target="100">0</span>
+                  <span class="stat-label">Energía %</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="quienes-somos" class="section-padding bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <p class="section-eyebrow">Quiénes somos</p>
+            <h2 class="section-title">Un gimnasio con clases dinámicas y atención cercana</h2>
+            <p class="section-text">
+              En One Style Gym buscamos que cada persona encuentre una rutina que se adapte a su tiempo,
+              su nivel y sus objetivos. Por eso combinamos clases grupales, seguimiento y un ambiente
+              cómodo para entrenar con confianza.
+            </p>
+            <p class="section-text">
+              Estamos en Santa Rosa de Calamuchita y trabajamos con propuestas pensadas para sostener la
+              motivación, mejorar el rendimiento y disfrutar el proceso.
+            </p>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="image-stack">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Personas entrenando en el gimnasio" class="img-fluid rounded-4 shadow-lg main-image">
+              <div class="floating-card">
+                <strong>Entrená a tu ritmo</strong>
+                <span>Clases variadas, grupos cuidados y mucha energía</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section-padding bg-black text-light">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-eyebrow">Servicios</p>
+          <h2 class="section-title">Actividades para moverte con energía</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Entrenamiento personalizado" class="img-fluid service-image">
+              <div class="p-4">
+                <h3 class="h4">Entrenamiento funcional</h3>
+                <p class="mb-0">Trabajo integral para fuerza, resistencia, coordinación y movilidad con clases dinámicas.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Clases grupales en gimnasio" class="img-fluid service-image">
+              <div class="p-4">
+                <h3 class="h4">Jumping</h3>
+                <p class="mb-0">Clases intensas y divertidas para activar todo el cuerpo con trabajo aeróbico y coordinación.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="service-card h-100">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80" alt="Zona de recuperacion y movilidad" class="img-fluid service-image">
+              <div class="p-4">
+                <h3 class="h4">Musculación</h3>
+                <p class="mb-0">Clases grupales con cupos reducidos y limitados para entrenar mejor y recibir seguimiento.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-6 reveal">
+            <article class="service-card h-100">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80" alt="Clase de spinning" class="img-fluid service-image">
+              <div class="p-4">
+                <h3 class="h4">Spinning</h3>
+                <p class="mb-0">Sesiones de cardio intensas para mejorar resistencia, ritmo y rendimiento general.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-6 reveal">
+            <article class="service-card h-100">
+              <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1200&q=80" alt="Clase de boxeo" class="img-fluid service-image">
+              <div class="p-4">
+                <h3 class="h4">Boxeo</h3>
+                <p class="mb-0">Clases para descargar energía, trabajar técnica y potenciar velocidad, coordinación y resistencia.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planes" class="section-padding bg-dark text-light">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="section-eyebrow">Planes</p>
+          <h2 class="section-title">Opciones para distintos ritmos</h2>
+          <p class="section-text mx-auto section-narrow">Tomé la información de la imagen que me compartiste y la acomodé en tarjetas para que quede integrada al diseño.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="plan-card h-100">
+              <span class="plan-badge">Plan 01</span>
+              <p class="plan-copy">Abonando por clase</p>
+              <strong class="plan-price">$8.000</strong>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="plan-card h-100">
+              <span class="plan-badge">Plan Básico</span>
+              <p class="plan-copy">2 días a la semana</p>
+              <p class="plan-copy text-white-50">Nivel básico e intermedio</p>
+              <strong class="plan-price">$40.000</strong>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="plan-card h-100">
+              <span class="plan-badge">Plan Medio</span>
+              <p class="plan-copy">3 días a la semana</p>
+              <p class="plan-copy text-white-50">Nivel intermedio</p>
+              <strong class="plan-price">$45.000</strong>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="plan-card h-100">
+              <span class="plan-badge">Exclusivo</span>
+              <p class="plan-copy">Plan libre</p>
+              <p class="plan-copy text-white-50">Todas las actividades. Elegí el horario y la clase que más se adapte a vos.</p>
+              <strong class="plan-price">$65.000</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="horarios" class="section-padding bg-dark text-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 reveal">
+            <p class="section-eyebrow text-center">Horarios</p>
+            <h2 class="section-title text-center">Grilla semanal de actividades</h2>
+          </div>
+          <div class="col-12 reveal">
+            <div class="schedule-table-wrapper">
+              <div class="table-responsive">
+                <table class="table schedule-table align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Horario</th>
+                      <th>Lun</th>
+                      <th>Mar</th>
+                      <th>Miér</th>
+                      <th>Juev</th>
+                      <th>Vier</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>06:30 a 07:30</td>
+                      <td>Funcional</td>
+                      <td>-</td>
+                      <td>Funcional</td>
+                      <td>-</td>
+                      <td>Funcional</td>
+                    </tr>
+                    <tr>
+                      <td>08:00 a 09:00</td>
+                      <td>Funcional</td>
+                      <td>Musculación</td>
+                      <td>Funcional</td>
+                      <td>Musculación</td>
+                      <td>Funcional</td>
+                    </tr>
+                    <tr>
+                      <td>09:00 a 10:00</td>
+                      <td>Funcional</td>
+                      <td>Spinning</td>
+                      <td>Funcional</td>
+                      <td>Spinning</td>
+                      <td>Funcional</td>
+                    </tr>
+                    <tr>
+                      <td>14:00 a 15:00</td>
+                      <td>-</td>
+                      <td>Musculación</td>
+                      <td>-</td>
+                      <td>Musculación</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>14:30 a 15:30</td>
+                      <td>Funcional</td>
+                      <td>-</td>
+                      <td>Funcional</td>
+                      <td>-</td>
+                      <td>Funcional</td>
+                    </tr>
+                    <tr>
+                      <td>15:00 a 16:00</td>
+                      <td>-</td>
+                      <td>Spinning</td>
+                      <td>-</td>
+                      <td>Spinning</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>15:30 a 16:30</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>Jumping</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>19:00 a 20:00</td>
+                      <td>Funcional</td>
+                      <td>Spinning</td>
+                      <td>Funcional</td>
+                      <td>Spinning</td>
+                      <td>Funcional</td>
+                    </tr>
+                    <tr>
+                      <td>21:00 a 22:30</td>
+                      <td>Boxeo</td>
+                      <td>-</td>
+                      <td>Boxeo</td>
+                      <td>-</td>
+                      <td>Boxeo</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="schedule-box">
+              <div class="schedule-row"><span>Cupos de musculación</span><strong>Reducidos</strong></div>
+              <div class="schedule-row"><span>Clases grupales</span><strong>Con seguimiento</strong></div>
+              <div class="schedule-row"><span>Consultas</span><strong>Por Instagram</strong></div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="benefits-box">
+              <h3 class="h4 mb-4">Lo que vas a encontrar</h3>
+              <div class="benefit-item">Entrenamiento funcional para distintos niveles</div>
+              <div class="benefit-item">Jumping, spinning y boxeo con mucha energía</div>
+              <div class="benefit-item">Musculación en grupos limitados</div>
+              <div class="benefit-item">Ubicación cómoda en Villa Strada</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ubicacion" class="section-padding bg-black text-light">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5 reveal">
+            <p class="section-eyebrow">Dónde queda</p>
+            <h2 class="section-title">Ubicación del gimnasio</h2>
+            <p class="section-text">
+              Estamos en Camino de los Horneros n°290, barrio Villa Strada, Santa Rosa de Calamuchita.
+              Mientras no uses tu API Key, el sitio muestra una vista previa del mapa por dirección.
+            </p>
+            <div class="map-instructions">
+              <p class="mb-2"><strong>Dirección:</strong> Camino de los Horneros n°290, barrio Villa Strada, Santa Rosa de Calamuchita</p>
+              <p class="mb-3"><strong>Mapa:</strong> Podés abrir la ubicación directamente en Google Maps.</p>
+              <a class="btn btn-outline-light w-100" href="https://www.google.com/maps/search/?api=1&query=One+Style+Gym,+Santa+Rosa+de+Calamuchita" target="_blank" rel="noreferrer">Abrir en Google Maps</a>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <div id="map" class="map-box" aria-label="Mapa de ubicación del gimnasio"></div>
+            <p id="mapStatus" class="small text-white-50 mt-3 mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-padding bg-dark text-light">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 reveal">
+            <p class="section-eyebrow">Contacto</p>
+            <h2 class="section-title">Sumate hoy mismo</h2>
+            <p class="section-text">
+              Para consultas, horarios y novedades, te dejamos el acceso directo al perfil de Instagram del gimnasio.
+            </p>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="contact-card">
+              <p class="mb-2"><strong>Gimnasio:</strong> One Style Gym</p>
+              <p class="mb-2"><strong>Dirección:</strong> Camino de los Horneros n°290, barrio Villa Strada</p>
+              <p class="mb-4"><strong>Instagram:</strong> @one.style.gym</p>
+              <a class="btn btn-danger w-100 mb-3" href="https://instagram.com/one.style.gym?igshid=ZDc4ODBmNjlmNQ==" target="_blank" rel="noreferrer">Ir al Instagram</a>
+              <a class="btn btn-outline-light w-100" href="https://www.google.com/maps/search/?api=1&query=One+Style+Gym,+Santa+Rosa+de+Calamuchita" target="_blank" rel="noreferrer">Ver ubicación</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 text-center text-white-50 bg-black border-top border-secondary-subtle">
+    <div class="container">
+      <small>One Style Gym - Sitio web en JavaScript + Bootstrap</small>
+    </div>
+  </footer>
+
+  <script>
+    window.GYM_CONFIG = {
+      gymName: "One Style Gym",
+      apiKey: "PON_AQUI_TU_API_KEY",
+      address: "Camino de los Horneros n°290, barrio Villa Strada, Santa Rosa de Calamuchita",
+      mapQuery: "One Style Gym, Santa Rosa de Calamuchita",
+      location: { lat: -32.0690, lng: -64.5363 },
+      zoom: 15
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
