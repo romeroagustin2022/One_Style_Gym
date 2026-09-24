@@ -389,16 +389,24 @@
     </div>
   </footer>
 
-  <script>
-    window.GYM_CONFIG = {
-      gymName: "One Style Gym",
-      apiKey: "PON_AQUI_TU_API_KEY",
-      address: "Camino de los Horneros n°290, barrio Villa Strada, Santa Rosa de Calamuchita",
-      mapQuery: "One Style Gym, Santa Rosa de Calamuchita",
-      location: { lat: -32.0690, lng: -64.5363 },
-      zoom: 15
-    };
-  </script>
+<script>
+  window.GYM_CONFIG = {
+    gymName: "One Style Gym",
+    apiKey: "PON_AQUI_TU_API_KEY",
+    address: "Camino de los Horneros n°290, barrio Villa Strada, Santa Rosa de Calamuchita",
+    mapQuery: "One Style Gym, Santa Rosa de Calamuchita",
+    location: { lat: -32.0690, lng: -64.5363 },
+    zoom: 15,
+
+    /* 👇 NUEVO: WhatsApp */
+    whatsapp: {
+      // Código de país + 9 + código de área + número, SIN +, SIN 0 y SIN 15
+      // Ej: Argentina (54) + 9 + 3546 + 123456  ->  "5493546123456"
+      phone: "5493546539150",
+      message: "¡Hola One Style Gym! Quiero consultar por los planes, horarios y cupos disponibles."
+    }
+  };
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 </body>
