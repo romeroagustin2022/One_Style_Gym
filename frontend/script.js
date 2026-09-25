@@ -212,7 +212,7 @@ function initMap() {
     content: `
       <div style="padding: 8px 10px; min-width: 180px;">
         <strong>${gymName}</strong><br>
-        <span>${gymConfig.address || "Definí aquí la dirección de tu gimnasio"}</span>
+        <span>${gymConfig.address || "camino de los horneros n°290"}</span>
       </div>
     `
   });
@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothNavBehavior();
   initHeroParallax();
   loadGoogleMapsScript();
-  initWhatsAppButton();   // 👈 ESTA LÍNEA FALTABA
+  initWhatsAppButton();  
 
   window.addEventListener("scroll", updateNavbarOnScroll, { passive: true });
 });
