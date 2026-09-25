@@ -152,7 +152,7 @@ function renderMapFallback() {
     </iframe>
   `;
 
-  setMapStatus("Vista previa cargada por dirección. Cuando tengas tu API Key, el mapa puede pasar a la versión interactiva con marcador personalizado.");
+  setMapStatus("Vista previa cargada por dirección.");
 }
 
 function loadGoogleMapsScript() {
